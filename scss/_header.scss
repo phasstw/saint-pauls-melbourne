@@ -1,0 +1,187 @@
+header{
+  position: relative;//for centering hero-overlay
+  //z-index: 0; 
+  max-height: 460px;
+  min-height: 460px;   
+  span#menu:target {
+
+    & ~ nav div.buttons-right a.menu{
+      &.open{
+        display: none;
+      }
+      &.close{
+        display: block;
+      }
+    }
+  }
+
+  span#menu:target {
+    & ~ .hero-img .navigation-menu{
+      width: 300px;
+      height: 100%;
+      background-color: rgba(6,21,36,0.7);
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      padding: 50px 0px 20px; 
+      opacity: 1; 
+      z-index: 2;//be under nav and above trending issues 
+      @include transition(width 0.5s ease, opacity 0.5s ease);
+
+      a{
+        padding: 10px 10px 10px 48px; 
+        display: block;
+        color: white;
+        border-bottom: 1px solid $nav-line;
+        text-align: center;
+        text-transform: uppercase;
+        &:hover{
+          background-color: rgba(black,0.5);
+        }
+        &:active{
+          background-color: rgba(black,0.7); 
+        }
+      }
+    }
+  }
+  nav{
+    width: 100%; 
+    background-color: $theme-blue; 
+    position: fixed;
+    top: 0px;
+    z-index: 3; //show shadow over div.hero-img and cover navigation-menu
+
+    div.buttons-left, div.buttons-right{
+      font-size: 1em;
+      a{
+        display: table;
+        float: left;
+
+        &.menu {
+          margin-left: 12px; 
+          margin-right: 0px; 
+          &:last-of-type{
+            margin-left: 0px; 
+          }
+          &.close{
+            display: none;
+          }
+          div.button{
+            border-right: none; 
+          }
+        }
+        div.button{
+          color: white;
+          text-shadow: 0px 1px 0px rgba(black,1);
+          padding: 16px 12px;
+          letter-spacing: 3px;
+            &.fa{
+              font-size: 1.3em;
+              padding: 5px 10px 8px; 
+            }
+          &:hover{
+            @include background(rgba(black,0.3));
+              text-decoration: underline;
+              text-decoration-color: $underline;
+          }
+        }
+      }
+    }
+    div.buttons-left{
+      float: left;
+    }
+
+    div.buttons-right{
+      float: right; 
+    }
+
+    a.logo{
+      padding: 3px 0px;
+      position: absolute;
+      left: 48%;
+      &:hover{
+        text-decoration: none; 
+      }
+
+      &:hover {
+        background-color: rgba(black,0.1);
+      }
+      &:active {
+        background-color: rgba(black,0.15);
+      }
+
+      &:before{
+        content: "";
+        background: url("../images/logo.png") no-repeat center center / 100% auto;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 6px;
+        left: -48px; 
+      }
+
+      h1{
+        margin: 0 auto;  
+        font-size: 0.7em;
+        color: white; 
+        position: relative;
+      }
+    }
+  }
+  div.hero-overlay{
+    margin: 0 auto;
+    width: 80%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+    h1.header-title,h2.header-subtitle{
+      color: white;
+      text-align: center;
+    }
+
+    h1.header-title{
+      font-size: 4em;
+      text-shadow: 0px 2px 4px rgba(black,0.5);
+      letter-spacing: 4px;
+      margin-bottom: 0px; 
+    }
+  }
+  
+
+  div.navigation-menu{
+    opacity: 0;
+    width: 0px;
+    height: 0px;  
+    @include transition(width 0.5s ease,
+             opacity 0.5s ease); 
+      a{
+        text-decoration-color: $underline;
+      }
+  }
+  
+  div.hero-img{
+    overflow: hidden;
+    max-height: 500px;
+    background-color: rgba(black,0.31);
+    img{
+      width: 100%;
+      height: auto; 
+      position: relative;
+      display: block;
+    }
+  }
+
+  div.hero-featured-image{//only for single.php
+    width: 194px;
+    height: 194px;
+    margin: 0px auto;
+    overflow: hidden;   
+    border-radius: 100%;
+    border: 1px solid #979797;
+    img{
+      width: 100%;
+      height: 100%;  
+    }
+  }
+}

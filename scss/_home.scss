@@ -1,0 +1,16 @@
+body.page-home{
+  header{
+    @include background( 
+        linear-gradient(rgba(black,0.4), rgba(black,0.4)),
+        url('../images/home-hero.jpg') no-repeat center 0px / 100% auto
+      ); 
+  }
+  section.home{
+    padding: 100px 0px; 
+    
+    h2{
+      display: table; 
+      margin: 0 auto;
+    }
+  }
+}

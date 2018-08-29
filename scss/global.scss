@@ -1,0 +1,33 @@
+//init and global style includes
+@import "compass/css3";
+@import "bits";
+@import "normalize";
+@import "header";
+
+//page style includes
+@import "home";
+
+//@import "worship";
+//@import "fellowship";
+//@import "education";
+
+//@import "news";
+
+//@import "sermons";
+//@import "about";
+//@import "contact";
+
+//@import "single";
+
+//global styles
+body{
+  font-size: 18px;
+  color: $base-text;
+  line-height: 1.3;
+  address{
+    font-style: normal; //disable default italics
+  }
+  p{
+    hyphens: auto;
+  }
+}
