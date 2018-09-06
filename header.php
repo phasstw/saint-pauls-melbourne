@@ -41,30 +41,31 @@
 		<nav class="grid clear">
 			<div class="buttons-left">
 				<a href="<?php echo get_site_url() ?>/worship/">
-					<div class="button">Worship</div>
+					<div class="button">worship</div>
 				</a>
 				<a href="<?php echo get_site_url() ?>/fellowship/">
-					<div class="button">Fellowship</div>
+					<div class="button">fellowship</div>
 				</a>
 				<a href="<?php echo get_site_url() ?>/education/">
-					<div class="button">Education</div>
+					<div class="button">education</div>
 				</a>
 			</div>
 
 			<a href="<?php echo get_site_url() ?>/" class="logo">
-				<h1 class="smallcaps">Saint</h1>
-				<h1 class="smallcaps">Paul's</h1>
+				<h1 class="smallcaps">saint</h1>
+				<div class="logo"></div>
+				<h1 class="smallcaps">paul's</h1>
 			</a>
 
 			<div class="buttons-right">
 				<a href="<?php echo get_site_url() ?>/sermons/">
-					<div class="button">Sermons</div>
+					<div class="button">sermons</div>
 				</a>
 				<a href="<?php echo get_site_url() ?>/about/">
-					<div class="button">About</div>
+					<div class="button">about</div>
 				</a>
 				<a href="<?php echo get_site_url() ?>/contact/">
-					<div class="button">Contact</div>
+					<div class="button">contact</div>
 				</a>
 				<a class="menu open" href="#menu">
 					<div class="button fa fa-bars"></div>
@@ -105,10 +106,9 @@
 					}
 				?>
 				</h1>
-				<h1 class="header-title">
 				<?php 
 					if(is_page('home')){ 
-						echo 'Anglican Church';				
+						echo '<div class="hero-line"></div><h1 class="header-title-2">Anglican Church</h1>';				
 					}
 				?>
 				</h2>
@@ -158,4 +158,9 @@
 			}	
 			*/
 			?>
+		<?php
+		if (is_page('home')){
+			echo "<div class='info-box'><h2>Come & Worship With Us:</h2><address><a href='https://goo.gl/maps/yySKRFePhq92'>7200 N. Wickham Road<br>Melbourne, FL 32940</a></address></div>";
+		}
+		?>
 	</header>

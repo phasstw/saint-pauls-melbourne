@@ -2,15 +2,60 @@ body.page-home{
   header{
     @include background( 
         linear-gradient(rgba(black,0.4), rgba(black,0.4)),
-        url('../images/home-hero.jpg') no-repeat center 0px / 100% auto
+        url('../images/hero-home.jpg') no-repeat center 0px / 100% auto
       ); 
   }
   section.home{
     padding: 100px 0px; 
     
-    h2{
+    div.service-times-bg{
+      width: 519px;
+      height: 273px;
+      margin: 0 auto 130px auto;
+      border-radius: 4px;
+      @include background( 
+        linear-gradient(rgba(black,0.4), rgba(black,0.4)),
+        url('../images/home-service-time-bg.jpg') no-repeat center 0px / 100% auto
+      );
+      box-shadow: 0px 2px 4px rgba(black,0.5);
+      div.service-times{
+        width: 413px;
+        margin: 0 auto;
+        border-radius: 4px;
+        padding: 10px 30px;
+        position: relative;
+        box-shadow: 0px 2px 4px rgba(black,0.5);
+        top: 200px;
+        @include background(linear-gradient(to bottom, rgba(white,0.5) 0%, rgba(#BFA18C,0.38) 100%), #F5E3BF);
+        h3{
+          text-align: center;
+          font-style: italic;
+          font-size: 1.4em;
+          margin: 0 auto 10px auto;
+        } 
+        p{
+          margin: 0 auto 2px auto;
+        }
+        span#footnote{
+          font-size: 0.8em;
+        }
+      }
+    }
+    p.drop-sc{
+      margin-bottom: 40px;
+    }
+    p#learn-more{
       display: table; 
-      margin: 0 auto;
+      margin: 60px auto;
+      border-bottom: 1px solid #969696;
+      border-top: 1px solid #969696;
+      padding: 4px 0px;
+      span.smallcaps{
+        font-size: 1.2em;
+      }
+      a{
+        margin: 0px 10px;
+      }
     }
   }
 }
