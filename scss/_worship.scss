@@ -1,0 +1,19 @@
+body.page-worship{
+  header{
+    max-height: 400px; 
+    @include background( 
+        linear-gradient(rgba(black,0.4), rgba(black,0.4)),
+        url('../images/hero-worship.jpg') no-repeat center 0px / 100% auto
+      ); 
+  }
+  section.worship{
+    padding: 80px 0px 60px;
+    div#daily-schedule{
+      max-width: 480px;
+      margin: 0 auto;
+      ul{
+        list-style-type: none; 
+      }
+    }
+  }
+}

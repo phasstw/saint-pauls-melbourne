@@ -1,12 +1,13 @@
 body.page-home{
   header{
+    max-height: 400px; 
     @include background( 
         linear-gradient(rgba(black,0.4), rgba(black,0.4)),
         url('../images/hero-home.jpg') no-repeat center 0px / 100% auto
       ); 
   }
   section.home{
-    padding: 100px 0px; 
+    padding: 80px 0px 60px; 
     
     div.service-times-bg{
       width: 519px;
