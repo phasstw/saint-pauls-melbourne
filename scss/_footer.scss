@@ -1,0 +1,41 @@
+footer{
+  background-color: $theme-blue;
+  padding: 20px 20px 6px 20px;
+  div.left,div.right{
+    color: white;
+    a{
+      color: white;
+    }
+  }
+  div.left{
+    float: left;
+    padding-left: 50px; 
+    div#name-jurisdiction{
+      display: table;
+      position: relative;
+      text-align: center;
+      &:before{
+        content: ""; 
+        position: absolute;
+        top: 5px;
+        left: -50px;
+        width: 41px;
+        height: 54px;
+        background: url("../images/logo.png") no-repeat center center / 100% auto;
+      }
+      h2#church-name,h3#jurisdiction{
+        margin: 0;
+      }  
+    }
+    p#office-hours{
+      margin: 10px 0px 0px 0px;
+    }
+  }
+  div.right{
+    float: right;
+    address{
+      margin: 4px 0px;
+    }
+  } 
+  
+}
