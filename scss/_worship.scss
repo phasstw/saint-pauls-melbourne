@@ -11,8 +11,12 @@ body.page-worship{
     div#daily-schedule{
       max-width: 480px;
       margin: 0 auto;
+      p{
+        margin: 8px 0px;
+      }
       ul{
         list-style-type: none; 
+        margin: 8px; 
       }
     }
   }

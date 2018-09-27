@@ -20,7 +20,7 @@ Template Name: Home Page
   </div>
 
   <p class="drop-sc">
-    Since the first Easter Morning, Sunday has been set apart as "the Lord's Day," a weekly celebration of the Resurrection of Jesus Christ from the Dead. At Saint Paul's Church, we look forward to the “life of the world to come” and participate in this weekly celebration by doing what Our Lord commanded us to do in His Holy Gospel: we gather together and celebrate <a class="link" href="#">the Holy Eucharist</a>.
+    Since the first Easter Morning, Sunday has been set apart as "the Lord's Day," a weekly celebration of the Resurrection of Jesus Christ from the Dead. At Saint Paul's Church, we look forward to the “life of the world to come” and participate in this weekly celebration by doing what Our Lord commanded us to do in His Holy Gospel: we gather together and celebrate the Holy Eucharist.
   </p>
 
   <a class="button smallcaps" href="/worship#daily-schedule-title">view daily service schedule</a>

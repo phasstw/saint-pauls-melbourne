@@ -15,8 +15,9 @@ Template Name: Worship Page
     <div class="grid-3-4">
       <ul>
         <li>7:00am - Morning Prayer</li>
-        <li>8:00am - Holy Eucharist(<span class="italic">said</span>)</li>
+        <li>8:00am - Holy Eucharist (<span class="italic">said</span>)</li>
         <li>10:00am - Holy Eucharist (<span class="italic">sung</span>)</li>
+        <li><span class="italic">*Sunday School available for children younger than 5 years old</span></li>
       </ul>
     </div>
 
@@ -35,7 +36,7 @@ Template Name: Worship Page
     <div class="grid-3-4">
       <ul>
         <li>9:00am - Morning Prayer</li>
-        <li>10:00am - Bible Study* (<span class="italic">*Fridays only</span>)</li>
+        <li>10:30am - Bible Study* (<span class="italic">*Fridays only</span>)</li>
         <li>11:30am - Eucharistic Adoration</li>
         <li>12:00pm - Holy Eucharist (<span class="italic">said</span>)</li>
       </ul>

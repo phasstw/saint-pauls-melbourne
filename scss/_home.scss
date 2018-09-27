@@ -15,8 +15,8 @@ body.page-home{
       margin: 0 auto 130px auto;
       border-radius: 4px;
       @include background( 
-        linear-gradient(rgba(black,0.4), rgba(black,0.4)),
-        url('../images/home-service-time-bg.jpg') no-repeat center 0px / 100% auto
+        linear-gradient(rgba(black,0.2), rgba(black,0.2)),
+        url('../images/home-service-time-bg.jpg') no-repeat center 0px / 102% auto
       );
       box-shadow: 0px 2px 4px rgba(black,0.5);
       div.service-times{
@@ -33,6 +33,7 @@ body.page-home{
           font-style: italic;
           font-size: 1.4em;
           margin: 0 auto 10px auto;
+          letter-spacing: 1px;
         } 
         p{
           margin: 0 auto 2px auto;
@@ -46,7 +47,8 @@ body.page-home{
       margin-bottom: 40px;
     }
     p#learn-more{
-      display: table; 
+      display: none; //underconstruction
+      //display: table; 
       margin: 60px auto;
       border-bottom: 1px solid #969696;
       border-top: 1px solid #969696;

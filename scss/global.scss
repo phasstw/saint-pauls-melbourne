@@ -25,12 +25,44 @@ body{
   font-size: 18px;
   color: $base-text;
   line-height: 1.3;
-  background-color: #FAFAFA; 
+  //background-color: #FAFAFA; 
+  background-color: rgba(black,0.05);
+  
+  //underconstruction heros
+  
+  &.page-fellowship,&.page-education,&.page-about,&.page-contact,&.page-sermons{
+    header{
+      max-height: 400px; 
+      @include background( 
+        linear-gradient(rgba(black,0.4), rgba(black,0.4)),
+        url('../images/hero-home.jpg') no-repeat center 0px / 100% auto
+      ); 
+    }
+    section{
+      padding: 80px 0px 60px;
+    }
+  }
+
   div.page-wrap{
     max-width: 1240px;
+    min-width: 1240px;
     margin: 0 auto;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    background-color: white; 
   }
+
+  //under construction
+  section{
+    &.fellowship,&.education,&.about,&.contact,&.sermons{
+      p.drop-sc{
+        margin: 40px auto 80px;
+      }
+    }
+  }
+
+
+
+
   a{
     &.link{
       color: $link;
@@ -64,7 +96,7 @@ body{
   }
   h2.section-heading{
     font-size: 2em;
-    margin: 0px auto 60px auto;
+    margin: 0px auto 40px auto;
     display: table; 
   }
   p.drop-sc{
