@@ -1,0 +1,15 @@
+body.page-sermons{
+  header{
+    max-height: 400px; 
+    @include background( 
+        linear-gradient(rgba(black,0.4), rgba(black,0.4)),
+        url('../images/hero-home.jpg') no-repeat center 0px / 100% auto
+      ); 
+  }
+  section.sermons{
+    div.sermons{
+      max-width: 800px;
+      margin: 0px auto;
+    }
+  }
+}

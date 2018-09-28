@@ -14,9 +14,9 @@
 
 //@import "news";
 
-//@import "sermons";
-//@import "about";
-//@import "contact";
+@import "sermons";
+@import "about";
+@import "contact";
 
 //@import "single";
 
@@ -61,7 +61,11 @@ body{
   }
 
 
-
+  p{
+    hyphens: auto;
+    max-width: 800px;
+    margin: 0 auto; 
+  }
 
   a{
     &.link{
@@ -94,17 +98,41 @@ body{
   address{
     font-style: normal; //disable default italics
   }
+
   h2.section-heading{
+    position:relative;
+    text-align: center;
     font-size: 2em;
     margin: 0px auto 40px auto;
-    display: table; 
-  }
-  p.drop-sc{
-    hyphens: auto;
-    max-width: 700px;
-    margin: 0 auto; 
+    width: 800px;
+    background-color: white; 
+    z-index: 2; 
+    &:before {
+      content: "";
+      display: block;
+      border-top: solid 1px $border;
+      border-bottom: solid 1px $border;
+      width: 100%;
+      height: 6px;
+      position: absolute;
+      top: 40%;
+      z-index: 0;
+    }
+    span {
+      background: #fff;
+      padding: 0 10px;
+      position: relative;
+      z-index: 1;
+    }
   }
   span.italic{
     font-style: italic;
+  }
+  div.double-line-flourish{
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border; 
+    width: 800px;
+    height: 6px;
+    margin: 20px auto; 
   }
 }

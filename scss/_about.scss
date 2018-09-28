@@ -1,0 +1,24 @@
+body.page-about{
+  header{
+    max-height: 400px; 
+    @include background( 
+        linear-gradient(rgba(black,0.4), rgba(black,0.4)),
+        url('../images/hero-home.jpg') no-repeat center 0px / 100% auto
+      ); 
+  }
+  section.about{
+    padding: 80px 0px 60px; 
+    
+    p.drop-sc{
+      margin-bottom: 20px; 
+    }
+    
+    p#visitor-note{
+      font-style: italic;
+      display: table;
+      text-align: center;
+      width: 420px;
+      margin: 20px auto;  
+    }
+  } 
+}

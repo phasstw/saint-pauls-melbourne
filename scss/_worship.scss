@@ -14,9 +14,19 @@ body.page-worship{
       p{
         margin: 8px 0px;
       }
-      ul{
-        list-style-type: none; 
-        margin: 8px; 
+      div.grid-1-4,div.grid-3-4{
+        margin: 10px auto;
+        ul{
+          list-style-type: none; 
+          margin: 8px; 
+          li{
+            &.footnote{
+              font-size: 0.8em;
+              margin: 4px auto;
+              font-style: italic;
+            }
+          }
+        }
       }
     }
   }
