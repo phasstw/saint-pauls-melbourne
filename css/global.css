@@ -693,6 +693,17 @@ body.page-home section.home {
         font-size: 0.8em; }
   body.page-home section.home p.drop-sc {
     margin-bottom: 40px; }
+  body.page-home section.home h4#latest-sermon {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    margin: 50px auto 20px; }
+  body.page-home section.home a.magazine-button {
+    margin-top: 20px; }
+  body.page-home section.home div.sermon-audio {
+    max-width: 800px;
+    margin: 0 auto; }
   body.page-home section.home p#learn-more {
     display: none;
     margin: 60px auto;
@@ -703,6 +714,50 @@ body.page-home section.home {
       font-size: 1.2em; }
     body.page-home section.home p#learn-more a {
       margin: 0px 10px; }
+  body.page-home section.home div.text-divider {
+    font-style: italic;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    padding: 34px 10px 22px;
+    margin: 40px auto 60px; }
+    body.page-home section.home div.text-divider div.text-wrap {
+      max-width: 714px;
+      margin: 0 auto; }
+      body.page-home section.home div.text-divider div.text-wrap p.citation {
+        float: right; }
+  body.page-home section.home div.devotions-bg {
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC40Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url("../images/lady-chapel-window.jpg") no-repeat center -480px/240% auto;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(100%, rgba(255, 255, 255, 0.4))), url("../images/lady-chapel-window.jpg") no-repeat center -480px/240% auto;
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/lady-chapel-window.jpg") no-repeat center -480px/240% auto;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/lady-chapel-window.jpg") no-repeat center -480px/240% auto;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../images/lady-chapel-window.jpg") no-repeat center -480px/240% auto;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.4);
+    width: 340px;
+    height: 390px;
+    margin: 0 auto; }
+    body.page-home section.home div.devotions-bg ul {
+      position: relative;
+      top: 160px;
+      left: -170px;
+      list-style: none;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 4px;
+      box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      width: 328px; }
+      body.page-home section.home div.devotions-bg ul h3 {
+        margin: 0px;
+        letter-spacing: 1px;
+        font-size: 1.1em;
+        display: table; }
+      body.page-home section.home div.devotions-bg ul li {
+        margin: 4px 0px; }
+  body.page-home section.home span#caption {
+    margin: 14px auto;
+    width: 216px;
+    text-align: center;
+    display: block; }
 
 body.page-worship header {
   max-height: 400px;
@@ -730,14 +785,31 @@ body.page-worship section.worship {
 
 body.page-sermons header {
   max-height: 400px;
-  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC40Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url("../images/hero-home.jpg") no-repeat center 0px/100% auto;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.4))), url("../images/hero-home.jpg") no-repeat center 0px/100% auto;
-  background: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-home.jpg") no-repeat center 0px/100% auto;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-home.jpg") no-repeat center 0px/100% auto;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-home.jpg") no-repeat center 0px/100% auto; }
-body.page-sermons section.sermons div.sermons {
-  max-width: 800px;
-  margin: 0px auto; }
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC40Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url("../images/hero-sermons-2.jpg") no-repeat center 0px/100% auto;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.4))), url("../images/hero-sermons-2.jpg") no-repeat center 0px/100% auto;
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-sermons-2.jpg") no-repeat center 0px/100% auto;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-sermons-2.jpg") no-repeat center 0px/100% auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-sermons-2.jpg") no-repeat center 0px/100% auto; }
+body.page-sermons section.sermons {
+  padding: 80px 0px 60px; }
+  body.page-sermons section.sermons div.single-sermon {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZmExOGMiIHN0b3Atb3BhY2l0eT0iMC4zOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='), #F5E3BF;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(191, 161, 140, 0.38))), #F5E3BF;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(191, 161, 140, 0.38) 100%), #F5E3BF;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(191, 161, 140, 0.38) 100%), #F5E3BF;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(191, 161, 140, 0.38) 100%), #F5E3BF; }
+    body.page-sermons section.sermons div.single-sermon h3.sermon-title {
+      margin: 6px 0px; }
+    body.page-sermons section.sermons div.single-sermon p.sermon-tags a {
+      font-style: italic;
+      color: #4776BE; }
+    body.page-sermons section.sermons div.single-sermon div.sermon-audio {
+      margin: 10px 0px 0px; }
 
 body.page-about header {
   max-height: 400px;
@@ -773,14 +845,14 @@ body {
   color: #554F4B;
   line-height: 1.3;
   background-color: rgba(0, 0, 0, 0.05); }
-  body.page-fellowship header, body.page-education header, body.page-about header, body.page-contact header, body.page-sermons header {
+  body.page-fellowship header, body.page-education header, body.page-about header, body.page-contact header {
     max-height: 400px;
     background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC40Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url("../images/hero-home.jpg") no-repeat center 0px/100% auto;
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.4))), url("../images/hero-home.jpg") no-repeat center 0px/100% auto;
     background: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-home.jpg") no-repeat center 0px/100% auto;
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-home.jpg") no-repeat center 0px/100% auto;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero-home.jpg") no-repeat center 0px/100% auto; }
-  body.page-fellowship section, body.page-education section, body.page-about section, body.page-contact section, body.page-sermons section {
+  body.page-fellowship section, body.page-education section, body.page-about section, body.page-contact section {
     padding: 80px 0px 60px; }
   body div.page-wrap {
     max-width: 1240px;
@@ -851,3 +923,7 @@ body {
     width: 800px;
     height: 6px;
     margin: 20px auto; }
+  body div.text-divider {
+    background-color: #15223C;
+    box-shadow: inset 0px 1px 3px 4px rgba(0, 0, 0, 0.8);
+    min-height: 108px; }

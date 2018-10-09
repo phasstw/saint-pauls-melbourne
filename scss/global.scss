@@ -30,7 +30,7 @@ body{
   
   //underconstruction heros
   
-  &.page-fellowship,&.page-education,&.page-about,&.page-contact,&.page-sermons{
+  &.page-fellowship,&.page-education,&.page-about,&.page-contact{
     header{
       max-height: 400px; 
       @include background( 
@@ -135,4 +135,9 @@ body{
     height: 6px;
     margin: 20px auto; 
   }
+  div.text-divider{
+      background-color: $theme-blue;
+      box-shadow: inset 0px 1px 3px 4px rgba(black,0.8);
+      min-height: 108px;  
+    }
 }

@@ -121,6 +121,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/hero-sermons-2.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 217394,
+		"inputAbbreviatedPath": "\/images\/hero-sermons-2.JPG",
+		"outputAbbreviatedPath": "\/images\/hero-sermons-2.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/hero-sermons.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34182,
+		"inputAbbreviatedPath": "\/images\/hero-sermons.jpg",
+		"outputAbbreviatedPath": "\/images\/hero-sermons.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/hero-worship.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -139,6 +161,17 @@
 		"initialSize": 268170,
 		"inputAbbreviatedPath": "\/images\/home-service-time-bg.jpg",
 		"outputAbbreviatedPath": "\/images\/home-service-time-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/lady-chapel-window.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 975210,
+		"inputAbbreviatedPath": "\/images\/lady-chapel-window.jpg",
+		"outputAbbreviatedPath": "\/images\/lady-chapel-window.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

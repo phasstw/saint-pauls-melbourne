@@ -1,5 +1,23 @@
 <?php
 
+//Google Analytics
+add_action('wp_head', 'cz_add_googleanalytics');
+function cz_add_googleanalytics() { ?>
+ 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126969627-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126969627-1');
+  </script>
+  <?php 
+}
+
+
+
 //Page Slug Body Class
 function add_slug_body_class( $classes ) {
 global $post;

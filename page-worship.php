@@ -17,7 +17,7 @@ Template Name: Worship Page
         <li>7:00am - Morning Prayer</li>
         <li>8:00am - Holy Eucharist (<span class="italic">said</span>)</li>
         <li>10:00am - Holy Eucharist (<span class="italic">sung</span>) with Incense*</li>
-        <li class="footnote">*Sunday School available for children younger than 5 years old</li>
+        <li class="footnote">*Childcare available for children younger than 5 years old</li>
       </ul>
     </div>
 
@@ -54,6 +54,9 @@ Template Name: Worship Page
     </div>
   </div>
   <div class="double-line-flourish"></div>
+
+
+
 
 </section>
 

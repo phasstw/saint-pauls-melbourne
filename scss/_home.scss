@@ -46,6 +46,20 @@ body.page-home{
     p.drop-sc{
       margin-bottom: 40px;
     }
+    h4#latest-sermon{
+      text-align: center;
+      font-style: italic;
+      font-size: 1.6em;
+      letter-spacing: 1px; 
+      margin: 50px auto 20px;
+    }
+    a.magazine-button{
+      margin-top: 20px;
+    }
+    div.sermon-audio{
+      max-width: 800px;
+      margin: 0 auto;
+    }
     p#learn-more{
       display: none; //underconstruction
       //display: table; 
@@ -59,6 +73,63 @@ body.page-home{
       a{
         margin: 0px 10px;
       }
+    }
+    div.text-divider{
+      font-style: italic;
+      color: white; 
+      font-size: 1.2em;
+      letter-spacing: 1px; 
+      padding: 34px 10px 22px; 
+      margin: 40px auto 60px; 
+      div.text-wrap{
+        max-width: 714px; 
+        margin: 0 auto; 
+        p.verse{
+          
+        }
+        p.citation{
+          float: right;
+        }
+      }
+    }
+    div.devotions-bg{
+      @include background( 
+        linear-gradient(rgba(white,0.4), rgba(white,0.4)),
+        url('../images/lady-chapel-window.jpg') no-repeat center -480px / 240% auto
+      );
+      box-shadow: inset 0px 3px 6px rgba(black,0.4);
+      width: 340px;
+      height: 390px;
+      margin: 0 auto; 
+      ul{
+        position: relative;
+        top: 160px;
+        left: -170px;
+        list-style: none; 
+        background-color: rgba(white,0.7);  
+        border-radius: 4px;
+        box-shadow: 0px 1px 2px 1px rgba(black,0.4);
+        padding: 10px 20px; 
+        width: 328px;
+        h3{
+          margin: 0px;
+          letter-spacing: 1px;  
+          font-size: 1.1em;
+          display: table;
+        }
+        li{
+          margin: 4px 0px;
+          a{
+            
+          }
+        }
+      }
+    }
+    span#caption{
+      margin: 14px auto;
+      width: 216px;
+      text-align: center;
+      display: block;
     }
   }
 }

@@ -3,13 +3,30 @@ body.page-sermons{
     max-height: 400px; 
     @include background( 
         linear-gradient(rgba(black,0.4), rgba(black,0.4)),
-        url('../images/hero-home.jpg') no-repeat center 0px / 100% auto
+        url('../images/hero-sermons-2.jpg') no-repeat center 0px / 100% auto
       ); 
   }
   section.sermons{
-    div.sermons{
+    padding: 80px 0px 60px;
+    div.single-sermon{
       max-width: 800px;
-      margin: 0px auto;
+      margin: 30px auto;
+      padding: 10px 20px;
+      border-radius:  4px;
+      box-shadow: 0px 2px 3px rgba(black,0.5);
+      @include background(linear-gradient(to bottom, rgba(white,0.5) 0%, rgba(#BFA18C,0.38) 100%), #F5E3BF); 
+      h3.sermon-title{
+        margin: 6px 0px;
+      }
+      p.sermon-tags{
+        a{
+          font-style: italic;
+          color: $link;
+        }
+      }
+      div.sermon-audio{
+        margin: 10px 0px 0px; 
+      }
     }
   }
 }
