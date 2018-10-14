@@ -117,6 +117,11 @@
 			<?php 
 			}//end if
 			else {
+				if ( get_post_type( get_the_ID() ) == 'sermon' ) {?>
+					<div class="hero-overlay"><h1 class="header-title">Sermons</h1></div>
+				<?php 
+				}
+
 				if(has_post_thumbnail()){?>
 				<div class="hero-featured-image">
 					<?php the_post_thumbnail(); ?>

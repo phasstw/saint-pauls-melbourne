@@ -1,0 +1,48 @@
+body.single{
+  section.single{
+    padding-top: 10px;
+    article{
+      div.sermon-header{
+        background-color: $theme-blue;
+        color: white;
+        padding: 20px;  
+        h3.sermon-title{
+          text-align: center;
+          font-size: 2em;
+        }
+        div.sermon-underline{
+          
+        }
+      }
+      div.audio-wrapper{
+        width: 800px;
+        margin: 60px auto 0px; 
+        div.sermon-audio{
+          margin-right: 10px;
+          width: 75%;
+          float: left;  
+        }
+        a.button{
+          float: right;
+          margin: 0;
+        }
+      }
+      div.sermon-manuscript{
+        padding: 30px 0px;
+        p{
+          margin: 10px auto;
+          &:first-of-type{
+            
+          }
+        } 
+      }
+      div.sermon-info{
+        max-width: 800px;
+        margin: 0 auto; 
+        p,time{
+          margin: 4px 0px;
+        }
+      }
+    }
+  }
+}

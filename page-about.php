@@ -16,7 +16,7 @@ Template Name: About Page
     As Anglicans, we are dedicated to worshiping God in the “beauty of holiness.” Ours is the “faith once delivered to the saints,” which is contained in the Nicene Creed, protected by the Seven Ecumenical Councils of the Undivided Church, and revealed through the Holy Scriptures. Our liturgy is that of the traditional English Church, preserved in both <span class="italic">the Book of Common Prayer (1928)</span> and <span class="italic">the American Missal</span>. We are a welcoming congregation that invites all to come and join us in the worship of Almighty God.
   </p>
   <p id="visitor-note">
-    Service booklets are available to assist vistors who may be unfamiliar with the Anglican worship service.
+    Service booklets are available to assist visitors who may be unfamiliar with the Anglican worship service.
   </p>
   <div class="double-line-flourish"></div>
 </section>

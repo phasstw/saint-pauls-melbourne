@@ -18,7 +18,7 @@
 @import "about";
 @import "contact";
 
-//@import "single";
+@import "single";
 
 //global styles
 body{
@@ -30,7 +30,7 @@ body{
   
   //underconstruction heros
   
-  &.page-fellowship,&.page-education,&.page-about,&.page-contact{
+  &.page-fellowship,&.page-education,&.page-about,&.page-contact,&.single{
     header{
       max-height: 400px; 
       @include background( 
@@ -66,6 +66,19 @@ body{
     max-width: 800px;
     margin: 0 auto; 
   }
+
+//style php the_tags
+p.sermon-tags{
+  a{
+    font-style: italic;
+    color: $link;
+    display: inline-block;
+    &:first-letter{
+      //text-transform: uppercase;
+    }
+  }
+}
+
 
   a{
     &.link{

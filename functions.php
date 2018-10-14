@@ -35,7 +35,6 @@ add_theme_support( 'post-thumbnails' );
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
-
 // default Media Dei scripts
 function scripts_styles() {
 
@@ -72,4 +71,16 @@ function media_dei_new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'media_dei_new_excerpt_more' );
 
+
+/* =BEGIN: Add Class to first Paragraph in WordPress the_content();
+    Source: http://webdevbits.com/wordpress/add-class-to-first-paragraph-in-wordpress-the_content/
+   ---------------------------------------------------------------------------------------------------- */
+function first_paragraph($content){
+  // add class to first paragraph of posts.
+  if ( is_single()) {
+    return preg_replace('/<p([^>]+)?>/', '<p$1 class="drop-sc">', $content, 1);
+  }
+}
+add_filter('the_content', 'first_paragraph');
 ?>
+

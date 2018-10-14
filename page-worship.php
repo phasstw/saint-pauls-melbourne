@@ -31,7 +31,17 @@ Template Name: Worship Page
     </div>
 
     <div class="grid-1-4">
-      <p>Tuesday-Friday</p>
+      <p>Tuesday</p>
+    </div>
+    <div class="grid-3-4">
+      <ul>
+        <li>Clergy Visitation Day*</li>
+        <li class="footnote">*Pastoral Visitations may be scheduled through the office.</li>
+      </ul>
+    </div>
+
+    <div class="grid-1-4">
+      <p>Wednesday-Friday</p>
     </div>
     <div class="grid-3-4">
       <ul>

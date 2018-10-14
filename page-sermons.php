@@ -19,11 +19,14 @@ Template Name: Sermons Page
     while($sermon->have_posts()) : $sermon->the_post(); ?>
       <!--start post-->
       <div class="single-sermon">
-        <h3 class="sermon-title"><?php the_title(); ?></h3>
+        <h3 class="sermon-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <p class="sermon-preacher">Preacher: <?php echo(types_render_field("preacher-full-name", array("raw" => true))); ?></p>
-        <date class="sermon-date">Date Preached: <?php echo(types_render_field("sermon-date", array("raw" => false))); ?></date>
+        <date class="sermon-date">Preached on: <?php echo(types_render_field("sermon-date", array("raw" => false))); ?></date>
         <p class="sermon-tags"><?php the_tags(); ?></p>
-        <div class="sermon-audio"><?php echo(types_render_field("sermon-audio", array("raw" => false))); ?></div>
+        <div class="audio-wrapper clear">
+          <div class="sermon-audio"><?php echo(types_render_field("sermon-audio", array("raw" => false))); ?></div>
+          <a class="button manuscript smallcaps" href="<?php the_permalink(); ?>">read manuscript</a>
+        </div>
       </div>
       <!--end post-->
 
