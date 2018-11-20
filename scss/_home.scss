@@ -61,8 +61,6 @@ body.page-home{
       margin: 0 auto;
     }
     p#learn-more{
-      display: none; //underconstruction
-      //display: table; 
       margin: 60px auto;
       border-bottom: 1px solid #969696;
       border-top: 1px solid #969696;
@@ -72,24 +70,6 @@ body.page-home{
       }
       a{
         margin: 0px 10px;
-      }
-    }
-    div.text-divider{
-      font-style: italic;
-      color: white; 
-      font-size: 1.2em;
-      letter-spacing: 1px; 
-      padding: 34px 10px 22px; 
-      margin: 40px auto 60px; 
-      div.text-wrap{
-        max-width: 714px; 
-        margin: 0 auto; 
-        p.verse{
-          
-        }
-        p.citation{
-          float: right;
-        }
       }
     }
     div.devotions-bg{
@@ -130,6 +110,72 @@ body.page-home{
       width: 216px;
       text-align: center;
       display: block;
+    }
+    
+    div.latest-magazine{
+      width: 800px; 
+      margin: 0 auto 40px;
+      div.text-wrap{
+        float: left;
+        width: 490px;
+        h3.magazine-title{
+          margin: 0px 0px 10px;
+        }
+        p.magazine-desc{
+          
+        }
+      }
+      
+      div.mag-thumb-wrap{
+        float: right;
+        div.thumbnail{
+          width: 280px;
+          height: 338px;
+          margin: 0 auto;
+          @include background( 
+           url('../images/regula-vitae-thumb.jpg') no-repeat center 0px / 100% auto
+          );
+          box-shadow: 0px 2px 3px rgba(black,0.3);
+        }
+        a.magazine-button{
+          
+        }
+      }
+    }
+    div.latest-loop-3{
+      margin: 40px auto;
+      h3{
+        width: 520px;
+        margin: 0 auto 16px;
+        font-size: 1.5em; 
+        letter-spacing: 2px;
+      }
+      div.grid{
+        max-width: 800px;
+        margin: 0 auto;
+        article{
+          a.thumbnail{
+            display: block;
+            width: 220px;
+            height: 124px;
+            margin: 0 auto 10px;
+            border: 1px solid $border;
+            box-shadow: 0px 2px 3px rgba(black,0.3);
+            overflow: hidden;
+            img{
+              width: 100%;
+              height: auto;
+              display: block;   
+            }
+          }
+          a.title{
+            text-align: center;
+            display: block;
+            font-size: 0.9em; 
+            color: $base-text;
+          }
+        }        
+      }
     }
   }
 }

@@ -19,6 +19,7 @@
 @import "contact";
 
 @import "single";
+@import "global-parts";
 
 //global styles
 body{
@@ -137,7 +138,8 @@ p.sermon-tags{
       position: relative;
       z-index: 1;
     }
-  }
+}
+
   span.italic{
     font-style: italic;
   }
@@ -148,9 +150,4 @@ p.sermon-tags{
     height: 6px;
     margin: 20px auto; 
   }
-  div.text-divider{
-      background-color: $theme-blue;
-      box-shadow: inset 0px 1px 3px 4px rgba(black,0.8);
-      min-height: 108px;  
-    }
 }

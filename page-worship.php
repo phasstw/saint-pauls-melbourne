@@ -41,15 +41,33 @@ Template Name: Worship Page
     </div>
 
     <div class="grid-1-4">
-      <p>Wednesday-Friday</p>
+      <p>Wednesday</p>
     </div>
     <div class="grid-3-4">
       <ul>
         <li>9:00am - Morning Prayer</li>
-        <li>10:30am - Bible Study*</li>
+      </ul>
+    </div>
+
+    <div class="grid-1-4">
+      <p>Thursday</p>
+    </div>
+    <div class="grid-3-4">
+      <ul>
+        <li>9:00am - Morning Prayer</li>
         <li>11:30am - Eucharistic Adoration</li>
         <li>12:00pm - Holy Eucharist (<span class="italic">said</span>)</li>
-        <li class="footnote">*Bible Study takes place on Fridays only</li>
+      </ul>
+    </div>
+
+    <div class="grid-1-4">
+      <p>Friday</p>
+    </div>
+    <div class="grid-3-4">
+      <ul>
+        <li>9:00am - Morning Prayer</li>
+        <li>10:30am - Bible Study</li>
+        <li>12:00pm - Holy Eucharist (<span class="italic">said</span>)</li>
       </ul>
     </div>
 

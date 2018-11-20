@@ -7,7 +7,8 @@ Template Name: Home Page
 <?php get_header(); ?>
 
 <section class="home">
-  <h2 class="section-heading"><span>Sunday Morning</span></h2>
+
+  <h2 class="double-line-heading main"><span>Sunday Morning</span></h2>
 
   <div class="service-times-bg">
     <div class="service-times">
@@ -26,31 +27,10 @@ Template Name: Home Page
   <a class="button smallcaps" href="/worship">view daily service schedule</a>
 
   <p id="learn-more"><span class="smallcaps">learn more about: </span><a class="link" href="#">Worship at Saint Paul's</a> <a class="link" href="#">Ministries & Outreach</a> <a class="link" href="#">Anglicanism</a> </p>
-  <a class="button magazine-button smallcaps" href="http://www.saintpaulsmelbourne.org/wp-content/uploads/2018/10/whole-issue.pdf">download parish magazine</a>
-  <h4 id="latest-sermon">Latest Sermon</h4>
-  <?php 
-    $args = array(
-      'post_type' => 'sermon',
-      'orderby' => 'publish_date',
-      'order' => 'DESC',
-      'posts_per_page' => 1
-    );
-    $sermon = new WP_Query($args);
-    while($sermon->have_posts()) : $sermon->the_post(); ?>
-      <!--start post-->
-      <div class="sermon-audio"><?php echo(types_render_field("sermon-audio", array("raw" => false))); ?></div>
-      <!--end post-->
 
-    <?php endwhile; ?>
-    <?php wp_reset_postdata(); // reset the query
-  ?>
-  <div class="text-divider">
-    <div class="text-wrap clear">
-      <p class="verse">And they continued stedfastly in the apostles' doctrine and fellowship, and in breaking of bread, and in prayers…</p>
-      <p class="citation">- The Acts of the Apostles 2:42</p>
-    </div>
-  </div>
-  <h2 class="section-heading"><span>Daily Worship</span></h2>
+  <?php include(TEMPLATEPATH."/global-parts/section-divider-quote-acts.php"); ?>
+  
+  <h2 class="double-line-heading main"><span>Daily Worship</span></h2>
   <p class="drop-sc">
     The world is full of distractions. These can keep us from being still and knowing the God we worship. We, at Saint Paul’s, believe in the importance of daily prayer and spiritual devotions. Come, pray, and find rest in Our Lord’s Sacramental Presence.
   </p>
@@ -66,6 +46,124 @@ Template Name: Home Page
     </ul>
   </div>
   <span id="caption" class="italic">A beautiful stained-glass window from our Lady Chapel</span>
+
+  <?php include(TEMPLATEPATH."/global-parts/section-divider-text-centered.php"); ?>
+
+  <!--<h2 class="section-heading"><span>Christian Fellowship</span></h2>-->
+  <h2 class="double-line-heading main"><span>Latest Publications</span></h3>
+
+  <div class="latest-magazine clear">
+    <div class="text-wrap">
+      <h3 class="magazine-title"><span class="italic">Regula Vitae</span></h3>
+      <p class="magazine-desc">
+        <span class="italic">Regula Vitae</span> is a Latin phrase that translated into English means, <span class="italic">"a rule of life."</span> Essentially, a rule of life is a private rule of prayer; that is to say, it is a thoughtful, personal, and conscious lifestyle that encourages one to grow closer to God and to become more and more like Him through a <span class="italic">regular</span> devotional life. Often times, Christians will subscribe to a common rule, sharing together in the pursuit of holiness. It is for this reason that the official parish magazine of Saint Paul's, Melbourne bears this title. <span class="italic">Regula Vitae</span> is published with the intention of helping the faithful of Saint Paul's Church encourage one another in the pursuit of holiness. It is published on the first of the month and is available in both print and electronic format. It is filled with news about Saint Paul's Anglican Church, <a class="link" href="https://anglicanprovince.org/">the Diocese of the Eastern United States</a>, theological articles, and other subjects of importance.
+      </p>
+    </div>
+    
+    <div class="mag-thumb-wrap">
+      <div class="thumbnail"></div>
+      <a class="button magazine-button smallcaps" href="http://www.saintpaulsmelbourne.org/wp-content/uploads/2018/10/whole-issue.pdf">download latest issue</a>
+    </div>
+  </div>
+  
+
+  <div class="latest-loop-3">
+    <h3 class="double-line-heading sub smallcaps"><span>sermons</span></h3>
+    <div class="grid">
+      <?php 
+        $args = array(
+          'posts_per_page'  => '3',
+          'post_type' => 'sermon'
+        );
+        $query = new WP_Query($args);
+          if($query->have_posts()){
+            while($query->have_posts()): ?>
+              <?php $query->the_post(); ?>
+
+              <article class="post-preview grid-1-3 clear">
+                <a class="thumbnail" href="<?php the_permalink(); ?>">
+                  <?php if(has_post_thumbnail()){ ?>
+                    <?php the_post_thumbnail(); ?>
+                  <?php } ?>
+                </a>
+                <a class="title" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+              </article>
+            
+            <?php endwhile;
+          }
+        // clean up after wp_query
+        wp_reset_postdata(); 
+      ?>
+    </div>
+  </div>
+  <!--
+  <div class="latest-loop-3">
+    <h3 class="double-line-heading sub smallcaps"><span>articles</span></h3>
+    <div class="grid">
+      <?php /*
+        $args = array(
+          'posts_per_page'  => '3',
+          'post_type' => 'post'
+        );
+        $query = new WP_Query($args);
+          if($query->have_posts()){
+            while($query->have_posts()): ?>
+              <?php $query->the_post(); ?>
+
+              <article class="post-preview grid-1-3 clear">
+                <a class="thumbnail" href="<?php the_permalink(); ?>">
+                  <?php 
+                    if(has_post_thumbnail()){ ?>
+                      <?php the_post_thumbnail(); 
+                    }
+                    else { ?>
+                       <img src="images/green.jpg"> <?php
+                     } 
+                    ?>
+                </a>
+                <a class="title" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+              </article>
+            
+            <?php endwhile;
+          }
+        // clean up after wp_query
+        wp_reset_postdata(); 
+      */?>
+    </div>
+  </div>
+
+
+  <div class="latest-loop-3">
+    <h3 class="double-line-heading sub smallcaps"><span>news & announcements</span></h3>
+    <div class="grid">
+      <?php /*
+        $args = array(
+          'posts_per_page'  => '3',
+          'post_type' => 'post',
+          'cat' => 'News & Announcements'
+        );
+        $query = new WP_Query($args);
+          if($query->have_posts()){
+            while($query->have_posts()): ?>
+              <?php $query->the_post(); ?>
+
+              <article class="post-preview grid-1-3 clear">
+                <a class="thumbnail" href="<?php the_permalink(); ?>">
+                  <?php if(has_post_thumbnail()){ ?>
+                    <?php the_post_thumbnail(); ?>
+                  <?php } ?>
+                </a>
+                <a class="title" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+              </article>
+            
+            <?php endwhile;
+          }
+        // clean up after wp_query
+        wp_reset_postdata(); 
+      */?>
+    </div>
+  </div>
+-->
 </section>
 
 <?php get_footer(); ?>

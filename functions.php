@@ -83,4 +83,3 @@ function first_paragraph($content){
 }
 add_filter('the_content', 'first_paragraph');
 ?>
-
